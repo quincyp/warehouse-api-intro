@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warehouse Inventory User Interface</title>
+  <style>
+    #log {
+      border: 1px solid black;
+      height: 20vh;
+      width: 80vw;
+    }
+    fieldset {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend>GET Requests</legend>
+    <button id="list-all-button">List All Items</button><br>
+    <input type="text" id="list-item-name" placeholder="item name"><button id="list-item-button">List Item</button>
+  </fieldset>
+  <fieldset>
+    <legend>POST Requests</legend>
+    <input type="text" id="add-item-name" placeholder="item name"><input type="text" id="add-item-count" placeholder="item count"><button id="add-item-button">Add New Item</button>
+  </fieldset>
+  <fieldset>
+    <legend>PUT Requests</legend>
+    <input type="text" id="change-item-name" placeholder="item name"><button id="increase-item-button">Increase Item Count</button><button id="decrease-item-button">Decrease Item Count</button>
+  </fieldset>
+  <fieldset>
+    <legend>DELETE Requests</legend>
+    <input type="text" id="remove-item-name" placeholder="item name"><button id="remove-item-button">Remove Item</button>
+  </fieldset>
+  <p>HTTP Response:</p>
+  <div id="log"></div>
+  <script src="./inventory-ui.js"></script>
+</body>
+</html>
