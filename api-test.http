@@ -1,0 +1,51 @@
+GET http://localhost:3000/inventory/retrieve-all HTTP/1.1
+
+###
+
+GET http://localhost:3000/inventory/retrieve/socks HTTP/1.1
+
+###
+
+GET http://localhost:3000/inventory/retrieve/pants HTTP/1.1
+
+###
+
+GET http://localhost:3000/inventory/retrieve/shirt HTTP/1.1
+
+###
+
+GET http://localhost:3000/inventory/retrieve/scarf HTTP/1.1
+
+###
+
+POST http://localhost:3000/inventory/add HTTP/1.1
+content-type: application/json
+
+{
+    "name": "scarf",
+    "count": 5
+}
+
+###
+
+PUT http://localhost:3000/inventory/change HTTP/1.1
+content-type: application/json
+
+{
+    "name": "scarf",
+    "change": 1
+}
+
+###
+
+PUT http://localhost:3000/inventory/change HTTP/1.1
+content-type: application/json
+
+{
+    "name": "scarf",
+    "change": -1
+}
+
+###
+
+DELETE http://localhost:3000/inventory/remove/pants HTTP/1.1
